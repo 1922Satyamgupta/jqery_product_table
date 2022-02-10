@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+      <style>
+    table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+  </head>
+  <body>
+    <div class="head">
+      <input type="text" placeholder="search" id="myInput"/>
+      <label for="brand">Select brand:</label>
+      <select name="brand" id="brand" aria-placeholder="select">
+        <option value="all" >All</option>
+        <option value="windows" id="apple" style="float: left">Apple</option>
+        <option value="mac" id="motorola" onchange="myFunction()">Motorola</option>
+        <option value="windows" id="samsung" style="float: left">Samsung</option>
+        <option value="mac" id="mac" onchange="myFunction()">ASUS</option>
+        <option value="windows" id="microsoft" style="float: left">Microsoft</option>
+      </select>
+      <label for="os" value="select">Select OS:</label>
+      <select name="os" id="brand">
+        <option value="all" >All</option>
+        <option value="windows" style="float: left">Android</option>
+        <option value="mac" id="ios">iOS</option>
+      </select>
+      <button type="submit">click</button>  
+    </div>
+    <br><br>
+    <div id="container">
+      <table>
+        <tbody id="myTable">
+        <tr>
+          <th>Id</th>
+          <th>Name</th>
+          <th>Brand</th>
+          <th>OS</th>
+        </tr>
+        <tr>
+            <td>100</td>
+            <td>iPhone 45</td>
+            <td id="apple">Apple</td>
+            <td id="ios">iOS</td>
+        </tr>
+        <tr>
+            <td>101</td>
+            <td>Motot X</td>
+            <td id="motorola">Motorola</td>
+            <td id="android">Android</td>
+        </tr>
+        <tr>
+            <td>102</td>
+            <td>iPhone 6</td>
+            <td id="apple">Apple</td>
+            <td id="ios">iOS</td>
+        </tr>
+        <tr>
+            <td>103</td>
+            <td>Samsung Galaxy S</td>
+            <td id="samsung">Samsung</td>
+            <td id="android">Android</td>
+        </tr>
+        <tr>
+            <td>104</td>
+            <td>Google Nexus</td>
+            <td id="asus">ASUS</td>
+            <td id="ios">iOS</td>
+        </tr>
+        <tr>
+            <td>105</td>
+            <td>Surface</td>
+            <td id="microsoft">Microsoft</td>
+            <td id="windows">windows</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="task2.js"></script>
+</html>
